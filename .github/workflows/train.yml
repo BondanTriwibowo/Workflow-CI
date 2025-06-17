@@ -24,8 +24,12 @@ jobs:
       run: |
         pip install mlflow scikit-learn pandas
 
-    - name: Run MLflow Project
-      run: mlflow run MLProject
+        - name: Install dependencies
+          run: pip install -r MLProject/requirements.txt
+
+
+    - name: Run MLflow Project (no conda)
+      run: mlflow run MLProject --no-co
 
     - name: Upload MLruns Artifact
       uses: actions/upload-artifact@v4
