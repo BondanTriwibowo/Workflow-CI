@@ -9,10 +9,6 @@ import argparse
 def main(data_path):
     mlflow.start_run()
     
-    # Logging parameter model (tambahkan di sini)
-    mlflow.log_param("n_estimators", 100)
-    mlflow.log_param("random_state", 42)
-    
     df = pd.read_csv(data_path)
     X = df.drop("target", axis=1)
     y = df["target"]
