@@ -13,6 +13,11 @@ def main(data_path):
     X = df.drop("traffic_volume", axis=1)
     y = df["traffic_volume"]
 
+    # 🔧 Encode kolom kategorikal
+    categorical_cols = X.select_dtypes(include=["object", "category"]).columns
+    X = pd.get_dummies(X, columns=categorical_cols)
+
+    # ✅ Baru split data setelah encoding
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
     
     model = RandomForestRegressor(n_estimators=100, random_state=42)
