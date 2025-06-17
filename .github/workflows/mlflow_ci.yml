@@ -18,9 +18,6 @@ jobs:
       with:
         python-version: 3.10
 
-    - name: Check Python version
-      run: python --version
-
     - name: Set up Conda
       uses: conda-incubator/setup-miniconda@v2
       with:
@@ -28,15 +25,16 @@ jobs:
         environment-file: MLProject/conda.yaml
         activate-environment: mlflow-env
 
-    - name: Verify Conda Environment and MLflow
+    - name: Check environment and Python version
       run: |
         conda env list
-        conda run -n workflow_ci_env mlflow run . --no-conda
+        conda run -n mlflow-env python --version
+        conda run -n mlflow-env pip list
 
     - name: Run MLflow Project
       run: |
         cd MLProject
-        conda run -n workflow_ci_env mlflow run . --no-conda
+        conda run -n mlflow-env mlflow run . --no-conda
 
     - name: Upload model artifact
       uses: actions/upload-artifact@v4
