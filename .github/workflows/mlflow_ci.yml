@@ -27,6 +27,9 @@ jobs:
         auto-update-conda: true
         environment-file: MLProject/conda.yaml
         activate-environment: mlflow-env
+        
+    - name: Force re-run
+      run: echo "Force rebuild to apply latest YAML"
 
     - name: Run MLflow Project
       run: |
