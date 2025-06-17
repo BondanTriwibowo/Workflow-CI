@@ -25,11 +25,11 @@ jobs:
         environment-file: MLProject/conda.yaml
         activate-environment: mlflow-env
 
-    - name: Check environment and Python version
+    - name: Check environment and MLflow install
       run: |
         conda env list
         conda run -n mlflow-env python --version
-        conda run -n mlflow-env pip list
+        conda run -n mlflow-env mlflow --version
 
     - name: Run MLflow Project
       run: |
