@@ -31,12 +31,12 @@ jobs:
     - name: Verify Conda Environment and MLflow
       run: |
         conda env list
-        conda run -n mlflow-env mlflow --version
+        conda run -n workflow_ci_env mlflow run . --no-conda
 
     - name: Run MLflow Project
       run: |
         cd MLProject
-        conda run -n mlflow-env mlflow run . --no-conda
+        conda run -n workflow_ci_env mlflow run . --no-conda
 
     - name: Upload model artifact
       uses: actions/upload-artifact@v4
