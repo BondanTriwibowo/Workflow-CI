@@ -17,18 +17,27 @@ def main(data_path):
     categorical_cols = X.select_dtypes(include=["object", "category"]).columns
     X = pd.get_dummies(X, columns=categorical_cols)
 
-    # ✅ Baru split data setelah encoding
+    # ✅ Split data
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
-    
+
     model = RandomForestRegressor(n_estimators=100, random_state=42)
     model.fit(X_train, y_train)
-    
+
     y_pred = model.predict(X_test)
     mse = mean_squared_error(y_test, y_pred)
-    
     mlflow.log_metric("mse", mse)
-    mlflow.sklearn.log_model(model, "model")
-    
+
+    # ✅ Logging model dengan input_example
+    input_example = X_test.iloc[:2]
+    print("🚀 Logging model ke MLflow dengan input_example:")
+    print(input_example)
+
+    mlflow.sklearn.log_model(
+        model,
+        artifact_path="model",
+        input_example=input_example
+    )
+
     mlflow.end_run()
 
 if __name__ == "__main__":
