@@ -24,9 +24,6 @@ jobs:
       run: |
         pip install mlflow scikit-learn pandas
 
-        - name: Install dependencies
-          run: pip install -r MLProject/requirements.txt
-
 
     - name: Run MLflow Project (no conda)
       run: mlflow run MLProject --no-co
