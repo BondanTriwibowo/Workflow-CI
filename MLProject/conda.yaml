@@ -1,4 +1,4 @@
-name: workflow_ci_env
+name: mlflow-env
 channels:
   - defaults
   - conda-forge
