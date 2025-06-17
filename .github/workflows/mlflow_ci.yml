@@ -28,6 +28,11 @@ jobs:
         environment-file: MLProject/conda.yaml
         activate-environment: mlflow-env
 
+    - name: Verify Conda Environment and MLflow
+      run: |
+        conda env list
+        conda run -n mlflow-env mlflow --version
+
     - name: Run MLflow Project
       run: |
         cd MLProject
