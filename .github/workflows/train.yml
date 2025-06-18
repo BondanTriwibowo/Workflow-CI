@@ -30,7 +30,7 @@ jobs:
         run: mlflow run . --env-manager=local
 
       - name: Upload model artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
-          name: trained-model
-          path: MLProject/artifacts/model.pkl
+        name: trained-model
+        path: MLProject/artifacts/model.pkl
