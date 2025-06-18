@@ -23,8 +23,14 @@ jobs:
         working-directory: ./MLProject
         run: |
           pip install --upgrade pip
-          pip install mlflow scikit-learn pandas
+          pip install mlflow scikit-learn pandas joblib
 
       - name: Run MLflow Project
         working-directory: ./MLProject
         run: mlflow run . --env-manager=local
+
+      - name: Upload model artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: trained-model
+          path: MLProject/artifacts/model.pkl
