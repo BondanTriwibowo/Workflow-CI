@@ -1,0 +1,14 @@
+artifact_uri: file:///d:/Training%20Dicoding/Submission%20Akhir/Workflow-CI/MLProject/mlruns/0/61d05e4da03740d482e0d23d1e546a62/artifacts
+end_time: 1750152223615
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 61d05e4da03740d482e0d23d1e546a62
+run_name: righteous-gull-317
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750152203027
+status: 3
+tags: []
+user_id: USER

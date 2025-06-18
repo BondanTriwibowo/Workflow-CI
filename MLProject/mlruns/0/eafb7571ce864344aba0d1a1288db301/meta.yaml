@@ -1,0 +1,14 @@
+artifact_uri: file:///d:/Training%20Dicoding/Submission%20Akhir/Workflow-CI/MLProject/mlruns/0/eafb7571ce864344aba0d1a1288db301/artifacts
+end_time: 1750152558962
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: eafb7571ce864344aba0d1a1288db301
+run_name: fun-moose-389
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750152538881
+status: 3
+tags: []
+user_id: USER

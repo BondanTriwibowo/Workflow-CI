@@ -1,0 +1,14 @@
+{
+  "inputs": [
+    {
+      "holiday": "Columbus Day",
+      "temp": -0.4032480657182067,
+      "rain_1h": -0.22692487194935929,
+      "snow_1h": 0.0,
+      "clouds_all": -0.5826540860453889,
+      "weather_main": "Clouds",
+      "weather_description": "few clouds",
+      "date_time": "2012-10-08 00:00:00"
+    }
+  ]
+}

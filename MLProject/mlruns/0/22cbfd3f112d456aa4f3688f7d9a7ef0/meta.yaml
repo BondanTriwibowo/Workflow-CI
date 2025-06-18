@@ -1,0 +1,14 @@
+artifact_uri: file:///d:/Training%20Dicoding/Submission%20Akhir/Workflow-CI/MLProject/mlruns/0/22cbfd3f112d456aa4f3688f7d9a7ef0/artifacts
+end_time: 1750150755916
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 22cbfd3f112d456aa4f3688f7d9a7ef0
+run_name: kindly-wolf-112
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750150742533
+status: 3
+tags: []
+user_id: USER

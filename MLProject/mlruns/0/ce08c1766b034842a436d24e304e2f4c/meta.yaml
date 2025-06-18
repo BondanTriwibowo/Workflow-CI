@@ -1,0 +1,14 @@
+artifact_uri: file:///d:/Training%20Dicoding/Submission%20Akhir/Workflow-CI/MLProject/mlruns/0/ce08c1766b034842a436d24e304e2f4c/artifacts
+end_time: 1750154375442
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: ce08c1766b034842a436d24e304e2f4c
+run_name: able-rat-408
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750154354558
+status: 3
+tags: []
+user_id: USER

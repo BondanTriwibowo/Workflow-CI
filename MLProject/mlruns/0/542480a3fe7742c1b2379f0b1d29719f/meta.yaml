@@ -1,0 +1,14 @@
+artifact_uri: file:///d:/Training%20Dicoding/Submission%20Akhir/Workflow-CI/MLProject/mlruns/0/542480a3fe7742c1b2379f0b1d29719f/artifacts
+end_time: 1750151791309
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 542480a3fe7742c1b2379f0b1d29719f
+run_name: receptive-conch-527
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750151774625
+status: 3
+tags: []
+user_id: USER

@@ -1,0 +1,10 @@
+artifact_location: file:///d:/Training%20Dicoding/Submission%20Akhir/Workflow-CI/MLProject/mlruns/0/models/m-e2e72334d6714f1587685261bf193e0b/artifacts
+creation_timestamp: 1750154512457
+experiment_id: '0'
+last_updated_timestamp: 1750154531655
+model_id: m-e2e72334d6714f1587685261bf193e0b
+model_type: null
+name: model
+source_run_id: c3296e9e13304c7b84916f7e18515d8f
+status: 2
+status_message: null

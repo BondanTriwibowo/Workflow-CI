@@ -1,0 +1,14 @@
+artifact_uri: file:///d:/Training%20Dicoding/Submission%20Akhir/Workflow-CI/MLProject/mlruns/0/68ce902e46ad4d218f1836638e41f83e/artifacts
+end_time: 1750155214104
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 68ce902e46ad4d218f1836638e41f83e
+run_name: gifted-rook-501
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750155200903
+status: 3
+tags: []
+user_id: USER

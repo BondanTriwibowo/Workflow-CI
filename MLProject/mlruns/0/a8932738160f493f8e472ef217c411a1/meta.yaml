@@ -1,0 +1,14 @@
+artifact_uri: file:///d:/Training%20Dicoding/Submission%20Akhir/Workflow-CI/MLProject/mlruns/0/a8932738160f493f8e472ef217c411a1/artifacts
+end_time: 1750155845808
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: a8932738160f493f8e472ef217c411a1
+run_name: colorful-grouse-610
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750155832536
+status: 3
+tags: []
+user_id: USER

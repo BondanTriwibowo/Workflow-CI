@@ -1,0 +1,14 @@
+artifact_uri: file:///d:/Training%20Dicoding/Submission%20Akhir/Workflow-CI/MLProject/mlruns/0/0c4a41b558c0436ca08faa6e7dbd4996/artifacts
+end_time: 1750151651357
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 0c4a41b558c0436ca08faa6e7dbd4996
+run_name: bald-squid-811
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750151639361
+status: 3
+tags: []
+user_id: USER
