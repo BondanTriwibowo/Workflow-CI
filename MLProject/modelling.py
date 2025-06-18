@@ -11,7 +11,7 @@ import joblib
 import shutil
 
 def main(data_path):
-    with mlflow.start_run():
+    with mlflow.start_run() as run:
         # Baca data
         df = pd.read_csv(data_path)
         X = df.drop("traffic_volume", axis=1)
@@ -45,14 +45,17 @@ def main(data_path):
             signature=signature
         )
 
-        # Simpan model joblib (optional, untuk artefak manual)
-        os.makedirs("artifacts", exist_ok=True)
-        joblib.dump(model, "artifacts/model.pkl")
+        # Ambil path model dari artifact URI
+        logged_model_path = mlflow.get_artifact_uri("model")
 
-        # Salin model hasil log MLflow ke artifacts/model (agar bisa dibuild Docker)
-        if os.path.exists("artifacts/model"):
-            shutil.rmtree("artifacts/model")
-        shutil.copytree("model", "artifacts/model")
+        # Copy model ke artifacts/model/
+        local_model_path = os.path.join("artifacts", "model")
+        if os.path.exists(local_model_path):
+            shutil.rmtree(local_model_path)
+        shutil.copytree(logged_model_path.replace("file://", ""), local_model_path)
+
+        # Simpan juga .pkl versi joblib (optional)
+        joblib.dump(model, "artifacts/model.pkl")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
